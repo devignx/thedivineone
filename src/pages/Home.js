@@ -15,11 +15,11 @@ const Home = () => {
     return(
         <div>
             <img className='absolute md:fixed top-10 left-10 w-[4rem] md:w-[6rem]' alt='' src={logo} />
-            <img className='absolute pc md:fixed mix-blend-multiply w-1/3 left-[10%] top-[2rem]' alt='' src={jesus} />
-            <Link to='/wallet' className='text-sm flex flex-row gap-2 w-fit px-5 py-3 fixed right-6 top-6 z-[999] font-medium rounded-full bg-white text-black'><button>Connect Wallet </button><img className='w-[1rem]'  src={wallet} alt='' /></Link>
+            <img className='fixed mix-blend-multiply w-1/3 pc left-[10%] top-[2rem]' alt='' src={jesus} />
+            <Link to='/wallet' className='text-sm pc flex flex-row gap-2 w-fit px-5 py-3 fixed right-6 top-6 z-[999] font-medium rounded-full bg-white text-black'><button>Connect Wallet </button><img className='w-[1rem]'  src={wallet} alt='' /></Link>
             
-            <section className="overflow-scroll-y absolute right-0 h-full w-[95%] md:w-[38%]">
-                <div className='absolute'>
+            <section className="overflow-scroll-y mt-[8rem] md:mt-0 absolute right-0 h-full w-[95%] md:w-[38%]">
+                <div >
                     <Recieved/>
                     <Sent/>
                     <Recieved/>
@@ -31,7 +31,7 @@ const Home = () => {
                     <br></br>
                 </div>
                 <form>
-                    <div className='fixed bottom-0 py-8  bg-brown-500 w-[36%] h-auto'><br></br></div>
+                    <div className='fixed bottom-0 py-8  bg-brown-500 w-screen md:w-[36%] h-auto'><br></br></div>
                     <input className='outline-none fixed w-screen md:w-[36%] mb-10 border-solid border-[1px] border-white/30 bg-white/10 text-white backdrop-blur-xl rounded-full bottom-0 px-5 py-4 w-[90%]' type="text" placeholder='Ask here'></input>
                 </form>
             </section>
