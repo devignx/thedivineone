@@ -8,7 +8,10 @@ module.exports = {
       colors:{
         yellow:{
           500:'#FFBD3E',
-      },
+        },
+        brown:{
+          500:'#2C2222',
+        },
     },
   },
   plugins: [],

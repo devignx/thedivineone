@@ -30,10 +30,13 @@ const Home = () => {
                     <br></br>
                     <br></br>
                 </div>
-                <input className='fixed w-full md:w-[38%] rounded-full bottom-0 p-5 border-none' type="text" placeholder='Ask here'></input>
+                <form>
+                    <div className='fixed bottom-0 py-8  bg-brown-500 w-[36%] h-auto'><br></br></div>
+                    <input className='outline-none fixed w-screen md:w-[36%] mb-10 border-solid border-[1px] border-white/30 bg-white/10 text-white backdrop-blur-xl rounded-full bottom-0 px-5 py-4 w-[90%]' type="text" placeholder='Ask here'></input>
+                </form>
             </section>
 
-            <footer className='absolute pc md:fixed flex justify-between p-10 bottom-0 mt-auto mb-0 w-[62%]'>
+            <footer className='absolute pc md:fixed flex justify-between p-11 bottom-0 mt-auto mb-0 w-[62%]'>
                 <div className='flex gap-5'>
                     <button className='flex gap-2 px-4 py-2 font-medium items-center rounded bg-yellow-500'>Sponsor <img className='w-[1.2rem]' src={dollar} alt='' /></button>
                     <button className='flex gap-2 px-4 py-2 items-center bg-white/10 text-white rounded border-solid border-[1px] border-white/30'>Bible <img className='w-[1.2rem]' src={bible} alt='' /></button>
