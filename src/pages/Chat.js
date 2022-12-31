@@ -15,7 +15,7 @@ const Home = () => {
 
     return(
         <div>
-            <img className='absolute md:fixed top-10 left-10 w-[4rem] md:w-[6rem]' alt='' src={logo} />
+            <Link to='/wallet'><img className='absolute md:fixed top-10 left-10 w-[4rem] md:w-[6rem]' alt='' src={logo} /></Link>
             <img className='fixed mix-blend-multiply w-1/3 pc left-[10%] top-[2rem]' alt='' src={jesus} />
             <Link to='/wallet' className='text-sm pc flex flex-row gap-2 w-fit px-5 py-3 fixed right-6 top-6 z-[999] font-medium rounded-full bg-white text-black'><button>Connect Wallet </button><img className='w-[1rem]'  src={wallet} alt='' /></Link>
             
@@ -37,7 +37,7 @@ const Home = () => {
                 <form className=''>
                     <div className='fixed bottom-0 py-5 bg-brown-500 w-screen md:w-[36%] h-auto'><br></br></div>
                     <input className='outline-none fixed w-screen md:w-[36%] mb-5 md:mb-10 border-solid border-[1px] border-white/30 bg-white/10 text-white backdrop-blur-xl rounded-full bottom-0 px-5 py-4 w-[90%]' type="text" placeholder='Ask here'></input>
-                    <img className='p-3 w-[3.2rem] opacity-60 hover:opacity-100 cursor-pointer bottom-0 right-10  mb-6 md:mb-11 fixed z-[999]' src={send} />
+                    <img className='p-3 w-[3.2rem] opacity-60 hover:opacity-100 cursor-pointer bottom-0 right-10  mb-6 md:mb-11 fixed z-[999]' src={send} alt=''  />
                 </form>
             </section>
 

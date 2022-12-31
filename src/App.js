@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
+import Chat from './pages/Chat';
 import NotFound from './pages/NotFound';
 import Wallet from './pages/Wallet';
 import ComingSoon from './pages/ComingSoon';
@@ -10,7 +10,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route element={<ComingSoon/>} path="/"/>
-        <Route element={<Home/>} path="/chat"/>
+        <Route element={<Chat/>} path="/chat"/>
         <Route element={<Wallet/>} path="/wallet"/>
         <Route path='*' element={<NotFound />}/>
       </Routes>
