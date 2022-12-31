@@ -1,5 +1,5 @@
 import wallet from '../assets/icons/wallet.svg'
-import jesus from '../assets/jesus.png'
+import jesus from '../assets/jesus.webp'
 import logo from '../assets/logo.svg'
 import { Link } from 'react-router-dom'
 
@@ -8,7 +8,7 @@ const Wallet = () => {
     return(
         <div>
             <Link to = '/'><img className='absolute md:fixed top-10 left-10 w-[4rem] md:w-[6rem]' alt='' src={logo} /></Link>
-            <img className='fixed z-[1]  md:fixed mix-blend-multiply w-1/2 md:w-1/4 left-0 md:left-[10%] md:top-[10rem] bottom-0' alt='' src={jesus} />
+            <img className='fixed z-[1]  md:fixed mix-blend-multiply w-1/2 md:w-1/4 left-0 md:left-[10%] md:top-[10rem] bottom-0' alt='' rel='preload' as='image' src={jesus} />
             
             <div className='w-full h-screen items-center gap-12 z-1 flex flex-col justify-center items-center -mt-10 '>
                 <p className='text-white text-lg text-center'>Try <span className='text-yellow-500 font-medium'>The Divine One</span> for free <br></br>without connecting wallet <span className='opacity-50'>(limited trials)</span></p>

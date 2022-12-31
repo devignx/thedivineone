@@ -1,4 +1,4 @@
-import jesus from '../assets/jesus.png'
+import jesus from '../assets/jesus.webp'
 import logo from '../assets/logo.svg'
 import dollar from '../assets/icons/dollar.svg'
 import star from '../assets/icons/star.svg'
@@ -16,7 +16,7 @@ const Home = () => {
     return(
         <div>
             <Link to='/wallet'><img className='absolute md:fixed top-10 left-10 w-[4rem] md:w-[6rem]' alt='' src={logo} /></Link>
-            <img className='fixed mix-blend-multiply w-1/3 pc left-[10%] top-[2rem]' alt='' src={jesus} />
+            <img className='fixed mix-blend-multiply w-1/3 pc left-[10%] top-[2rem]' alt='' rel='preload' as='image' src={jesus} />
             <Link to='/wallet' className='text-sm pc flex flex-row gap-2 w-fit px-5 py-3 fixed right-6 top-6 z-[999] font-medium rounded-full bg-white text-black'><button>Connect Wallet </button><img className='w-[1rem]'  src={wallet} alt='' /></Link>
             
             <section className="overflow-scroll-y mt-[8rem] md:mt-0 absolute right-0 h-full w-[95%] md:w-[38%]">
