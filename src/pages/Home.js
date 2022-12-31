@@ -5,6 +5,7 @@ import star from '../assets/icons/star.svg'
 import clear from '../assets/icons/clear.svg'
 import bible from '../assets/icons/book.svg'
 import wallet from '../assets/icons/wallet.svg'
+import send from '../assets/icons/send-outline.svg'
 import { Link } from 'react-router-dom'
 
 import Recieved from '../components/Recieved'
@@ -29,10 +30,14 @@ const Home = () => {
                     <Recieved/>
                     <br></br>
                     <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
                 </div>
-                <form>
-                    <div className='fixed bottom-0 py-8  bg-brown-500 w-screen md:w-[36%] h-auto'><br></br></div>
-                    <input className='outline-none fixed w-screen md:w-[36%] mb-10 border-solid border-[1px] border-white/30 bg-white/10 text-white backdrop-blur-xl rounded-full bottom-0 px-5 py-4 w-[90%]' type="text" placeholder='Ask here'></input>
+                <form className=''>
+                    <div className='fixed bottom-0 py-5 bg-brown-500 w-screen md:w-[36%] h-auto'><br></br></div>
+                    <input className='outline-none fixed w-screen md:w-[36%] mb-5 md:mb-10 border-solid border-[1px] border-white/30 bg-white/10 text-white backdrop-blur-xl rounded-full bottom-0 px-5 py-4 w-[90%]' type="text" placeholder='Ask here'></input>
+                    <img className='p-3 w-[3.2rem] opacity-60 hover:opacity-100 cursor-pointer bottom-0 right-10  mb-6 md:mb-11 fixed z-[999]' src={send} />
                 </form>
             </section>
 
