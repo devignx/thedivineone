@@ -12,7 +12,7 @@ const ComingSoon = () => {
         <div className="w-screen h-screen bg-white">
             <div>
                 <Link to = '/chat'><img className='absolute md:fixed top-10 left-10 w-[4rem] md:w-[6rem]' alt='' src={logo} /></Link>
-                <img className='fixed z-[1] opacity-30  md:fixed mix-blend-multiply w-1/2 md:w-1/4 left-0 md:left-[20%] md:top-[10rem] bottom-0' alt='' src={jesus} />
+                <img className='fixed z-[1] opacity-30  md:fixed mix-blend-multiply w-1/2 md:w-1/4 left-0 md:left-[20%] md:top-[10rem] bottom-0' rel='preload' as='image' alt='' src={jesus} />
                 <img className='fixed bottom-[2rem] right-[3rem] md:right-[8rem] w-[10rem] md:w-[17rem] lg:w-[20rem]' alt='' src={cs} />
             </div>
 
